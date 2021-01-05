@@ -10,18 +10,18 @@ const windowHeight = Dimensions.get('window').height;
             
     <View style={ala.container}>
     
-    <TouchableOpacity style={ala.imagep}>
-        <Image source={require('./assets/flech.png')} style={ala.imagep} onPress={() => navigation.navigate('Ala')}/>
+    <TouchableOpacity style={ala.imagep} onPress={()=>{navigation.navigate('Login')}} >
+        <Image source={require('./assets/flech.png')} />
       </TouchableOpacity>
 
  
-      <TouchableOpacity style={ala.imagep}>
+   
   <Image source={require('./assets/Groupe.png')}
-  style={ala.image} onPress={() => navigation.navigate('Ala')}/>
+  style={ala.image} />
  
 
 
-  </TouchableOpacity>
+
   <Text style={ala.log}>Register</Text>
   <KeyboardAvoidingView
 behavior="padding">
@@ -66,12 +66,8 @@ const ala =StyleSheet.create(
       position:"absolute",top:20,margin:1,
       left:1,
       right:1,
-      flex:1,
-   
-
-
-
-    },
+  
+     },
     
     image:{
      width:windowWidth,
